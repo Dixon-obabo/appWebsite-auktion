@@ -1,0 +1,93 @@
+
+nav{
+    background: aliceblue;
+    padding: 10px;
+    color: black;
+    margin-left: 0px;
+    border-radius: 3px;
+}
+
+ form button{
+     border: none;
+     margin-left: 0px;
+     border-radius: 3px;
+     padding: 10px;
+ }
+
+ form button:hover{
+     background-color: black;
+     cursor: pointer;
+ }
+
+ input[id="search"]{
+    height: 35px;
+    font-size: 15px;
+    width: 300px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 3px;
+}
+
+
+ul{
+    list-style: none;
+    background-color: coral;
+}
+
+ul li{
+    border: none;
+    border-radius: 3px;
+    width: min-content;   
+}
+
+ul li:hover{
+    background-color: black;
+}
+
+div[id="sidepanel"]{
+    background-color: blue;
+    width: 25%;
+    border: none;
+    border-radius: 3px;
+}
+
+img[id="previewimage"]{
+    width: 20%;
+    height: 20%;
+}
+div[id="asset_data"]{    
+    width: 100%;
+    float: right;
+}
+
+div[id="asset_data"] input{
+    display: block;
+    margin-left: 75%;
+    width: 25%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    height: 30px;
+    
+    text-align: center;
+}
+
+
+div[id='asset_data'] button{
+    width: 25%;
+    height: 30px;
+    margin: 20px;
+    padding-right: 10px;
+}
+
+input[type='file']{
+    display: none;
+}
+
+.input_lable{
+    display: inline-block;
+    cursor: pointer;
+    width:  200px;
+    height: 200px;
+    background-color: cyan;
+}

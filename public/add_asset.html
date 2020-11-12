@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="display: block;">
+
+
+    
+<color name="colorPrimary">#6200EE</color>
+<color name="colorPrimaryDark">#3700B3</color>
+<color name="colorAccent">#03DAC5</color>
+<color name="white">#ffff</color>
+    <div id="asset_data" style="display: block;">
+        <input type="text" placeholder="Asset name" id="asset_name">
+        <input type="text" placeholder="Reserve price Ksh" id="asset_price">
+        <input type="text" placeholder="Asset description" id="asset_description">
+    
+        <button style="margin: auto;"> Post asset </button>
+    
+    </div>
+    <div style="display: block;" id="holder">
+         <br>
+        <p>Please pick asset images</p>
+       <label  id="input_lable" for="pickfile" class="input_lable">
+        <input id="pickfile" type="file" multiple onchange="showpreview(event);" style="content: none;" value="pick asset">
+       </label> 
+    </div>
+
+<script >
+ function showpreview(event){
+    
+for(i=0;i<event.target.files.length;i++){
+    document.getElementById("input_lable").style.display="none";
+    console.log(event.target.files[i]);
+    var pre=document.createElement("img");
+    var src=URL.createObjectURL(event.target.files[i]);
+    pre.style.width="200px";
+    pre.style.height="200px";
+    pre.style.margin="5px";
+    pre.style.borderRadius="3px";
+    pre.src=src;
+    document.getElementById("holder").appendChild(pre);
+    // document.getElementById("holder").appendChild(document.getElementById("input_lable"));
+    // document.getElementById("input_lable").style.display="visible";
+}
+
+ }
+</script>
+</body>
+</html>
