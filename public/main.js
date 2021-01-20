@@ -12,12 +12,14 @@
             var cool=snapshot.val().price;
      
          if(cool==null) {
-            document.write('we cant read the data')
+            //document.write('we cant read the data')
+            //document.getElementById("numusers").innerHTML="there is data in your page"
          }
          else{
-             document.getElementById('chosen').textContent=cool;
-            //document.write(cool);   
-         };
+            // document.getElementById('chosen').textContent=cool;
+           // document.write("Hello we got your data");   
+        document.getElementById('numusers').innerHTML="there is data in your page"
+        };
         
         }); 
        
@@ -28,7 +30,7 @@
 
 
 } 
-
+cool();
 
 
 
